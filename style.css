@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 460px;
+}
+
+.form-card,
+.success-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    animation: appear 0.5s ease;
+}
+
+.logo {
+    color: #6366f1;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #111827;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.footer-text {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.success-card {
+    text-align: center;
+    padding: 55px 35px;
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+    animation: pop 0.5s ease;
+}
+
+.success-card h1 {
+    font-size: 27px;
+}
+
+.success-message {
+    color: #16a34a;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.welcome-message {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 480px) {
+    .form-card,
+    .success-card {
+        padding: 28px 22px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}

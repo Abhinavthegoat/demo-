@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="form-card" id="formCard">
+
+            <div class="logo">CREATE ACCOUNT</div>
+
+            <h1>Welcome!</h1>
+            <p class="subtitle">Please fill in your details to register.</p>
+
+            <form id="registrationForm">
+
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" min="1" max="120" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" minlength="8" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+
+                <p id="errorMessage" class="error"></p>
+
+                <button type="submit" class="register-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="footer-text">Simple. Secure. Easy.</p>
+
+        </div>
+
+        <div class="success-card hidden" id="successCard">
+
+            <div class="success-icon">✓</div>
+
+            <h1>Congratulations!</h1>
+
+            <p class="success-message">
+                You have successfully registered.
+            </p>
+
+            <p class="welcome-message">
+                Welcome aboard! Your registration is complete.
+            </p>
+
+            <button onclick="location.reload()" class="register-btn">
+                Back to Home
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
